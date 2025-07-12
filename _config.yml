@@ -7,7 +7,7 @@ include:
   - README.md
   - LICENSE.md
 url: https://thingking-machine.github.io
-baseurl: /depsekr
+baseurl: /monsho
 
 title: Thingking Machine
 description: A machine is a thing. Things can not think. ...but some of them can thingk!
@@ -16,14 +16,14 @@ machine:
   name: Thingking-Machine
   verb: Thingking
   instructions_file: thingking.txt
-  token: depsek.txt
-  apiUrl: https://api.deepseek.com/chat/completions
+  token: monsho.txt
+  apiUrl: https://api.moonshot.ai/v1/chat/completions
 
 app:
-  worker_name: depsekapi.js
+  worker_name: monshoapi.js
 
 lm:
-  model: deepseek-reasoner
+  model: kimi-thinking-preview
   max_tokens: 8192
   presence_penalty: 0.0
   frequency_penalty: 0.0

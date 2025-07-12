@@ -55,7 +55,7 @@ self.onmessage = async function (event) {
     const defaultApiParameters = {
       model: llmSettings.model || 'deepseek-reasoner',
       max_tokens: llmSettings.max_tokens || 8192,
-      temperature: llmSettings.temperature || 1.0,
+      temperature: llmSettings.temperature || 0.6,
       frequency_penalty: llmSettings.frequency_penalty || 0.0,
       presence_penalty: llmSettings.presence_penalty || 0.0,
       top_p: llmSettings.top_p || 0.9,
